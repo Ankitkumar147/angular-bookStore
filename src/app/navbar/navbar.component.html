@@ -1,0 +1,41 @@
+<div class="toolbar"> 
+<mat-toolbar class="mat-elevation-z8" color="primary">
+  <button mat-icon-button class="menu" [mat-menu-trigger-for]="menu">
+    <mat-icon>menu</mat-icon>
+  </button> 
+  <mat-menu #menu>
+    <menu mat-menu-item>Add Book</menu>
+    <menu mat-menu-item>Account</menu>
+  </mat-menu>
+  <img class="book-logo" id="book-logo" src="../assets/education.svg">
+    <span  class="toolbar-text" routerLink="Home" >Book Store</span>
+    &nbsp;&nbsp;
+    <div class="spacer"></div>
+      <div class="search"
+            >
+        <!-- <mat-icon style="color: darkgray; transform: scale(1);">search</mat-icon> -->
+      <input type="text"
+              id="search"
+              class="input"
+              placeholder="Search"
+              />
+    </div>
+    <div class="spacer"></div>  
+    &nbsp;
+    <a routerLink="login" mat-raised-button color="accent">Login</a>
+    &nbsp; &nbsp; 
+    <a mat-raised-button color="accent">Sign Up</a>
+    &nbsp;&nbsp; 
+    <a class="material-icons">shopping_cart</a>
+</mat-toolbar>
+</div>
+<div class="second-header">
+<nav class="navbar">
+        <a>Home</a>
+        <a>Featured</a>
+        <a>Arrivals</a>
+        <a>About Us</a>
+        <a>Contact Us</a> 
+        <a>Blog</a> 
+</nav>
+</div>
