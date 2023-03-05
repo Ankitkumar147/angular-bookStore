@@ -1,1 +1,32 @@
-<p>login works!</p>
+<div class="bootstrap-wrapper">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+               <mat-card class="mat-elevation-z4" style="margin-top: 20px;">
+                <h1 style="text-align: center; color: white; background-color: #10a76d;">Login Here...</h1>
+                <form (ngSubmit)="onSubmit()">
+                    <!--Email ID---->
+                    
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Email-Id</mat-label>
+                        <input [(ngModel)]="form.email" name="email" id="email" type="email" matInput placeholder="Enter here" required="">
+                        <mat-hint>Same Email-Id that you registered with.</mat-hint>
+                        <mat-icon matSuffix style="color: #10a76d;">email</mat-icon>  
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input  [(ngModel)]="form.password" name="password" id="password" type="password" matInput placeholder="Enter here" required="">
+                        <mat-icon matSuffix style="color: #10a76d;">password</mat-icon>  
+                    </mat-form-field>
+                    <div class="container text-center">
+                        <button mat-raised-button color="primary" id="submit" type="submit">Login</button>
+                         &nbsp;
+                        <button mat-raised-button color="accent" x>Reset</button>
+                    </div>
+                </form>
+            </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

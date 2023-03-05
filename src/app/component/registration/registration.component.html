@@ -1,0 +1,47 @@
+<mat-card>
+    <div class="container">
+        <div class="row" style="margin-top: 10px; text-align: center;">
+        <div class="mat-elevation-z8" color="primary" style="background-color: #10a76d; width: 100%; 
+        margin-bottom: 10px;">
+            <h2 style="color: white; text-align: center;padding-top: 10px;">User Registration</h2>
+        </div>
+            <form (ngSubmit)="onSubmit()">
+                <!--------username---------> 
+                <!-- <div class="parent"> -->
+                    <mat-form-field style="width:55%" appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input [(ngModel)]="form.userName" name="userName" matInput placeholder="Enter Username" required="">
+                        <mat-hint>Username must be Unique</mat-hint>
+                        <mat-icon matSuffix style="color: #10a76d;">person</mat-icon>
+                       
+                    </mat-form-field>
+            <!--------user Email--------->    
+                    <mat-form-field style="width:55%" appearance="outline">
+                            <mat-label>Email-Id</mat-label>
+                            <input [(ngModel)]="form.email" name="email" type="email" matInput placeholder="Enter User Email-Id" required="">
+                            <mat-icon matSuffix style="color: #10a76d;">email</mat-icon>
+                    </mat-form-field>
+            <!--------user Password--------->
+                    <mat-form-field style="width:55%" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input [(ngModel)]="form.password" name="password" type="password" matInput placeholder="Enter Your Password" required="">
+                        <mat-icon matSuffix style="color: #10a76d;">password</mat-icon>
+                    </mat-form-field>
+                    
+                    <!-- </div> -->
+                    <div class="container">
+                        
+                        <button id="submit" type="submit" mat-button 
+                         style="border: 2px solid #10a76d; width: 15%; margin-top: 30px;border-radius: 0px; outline: none; color:#10a76d;">
+                         Register
+                        </button>
+                        <!-- &nbsp;
+                        <button id="submit" type="submit" mat-button 
+                         style="border: 2px solid #10a76d; width: 15%; margin-top: 30px;border-radius: 0px; outline: none; color:#10a76d;">
+                         Reset
+                        </button> -->
+                    </div>
+            </form>
+        </div>
+    </div>
+</mat-card>

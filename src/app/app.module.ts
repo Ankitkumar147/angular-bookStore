@@ -13,9 +13,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { LoginComponent } from './component/login/login.component';
 import { AlertComponent } from './component/alert/alert.component';
-import {MatCardModule} from '@angular/material/card';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatCardModule} from '@angular/material/card';
+import { MatMenuModule} from '@angular/material/menu';
 import { BookComponent } from './component/book/book.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { RegistrationComponent } from './component/registration/registration.component';
+import Swal from 'sweetalert2'
 
 @NgModule({
   declarations: [
@@ -25,6 +31,7 @@ import { BookComponent } from './component/book/book.component';
     LoginComponent,
     AlertComponent,
     BookComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +43,12 @@ import { BookComponent } from './component/book/book.component';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    FormsModule,
+    ReactiveFormsModule,
+    FlexLayoutModule,
+    HttpClientModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

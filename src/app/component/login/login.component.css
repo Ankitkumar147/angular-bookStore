@@ -1,0 +1,14 @@
+.full-width{
+    width: 55%;
+    
+}
+
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+}
+
+.text-center{
+    text-align: center;
+}

@@ -4,7 +4,8 @@
     <mat-icon>menu</mat-icon>
   </button> 
   <mat-menu #menu>
-    <menu mat-menu-item>Add Book</menu>
+    <menu routerLink="/addbooks" mat-menu-item>Add Book</menu>
+    <menu routerLink="/addbooks" mat-menu-item>Book List</menu>
     <menu mat-menu-item>Account</menu>
   </mat-menu>
   <img class="book-logo" id="book-logo" src="../assets/education.svg">
@@ -24,14 +25,14 @@
     &nbsp;
     <a routerLink="login" mat-raised-button color="accent">Login</a>
     &nbsp; &nbsp; 
-    <a mat-raised-button color="accent">Sign Up</a>
+    <a routerLink="registration" mat-raised-button color="accent">Sign Up</a>
     &nbsp;&nbsp; 
     <a class="material-icons">shopping_cart</a>
 </mat-toolbar>
 </div>
 <div class="second-header">
 <nav class="navbar">
-        <a>Home</a>
+        <a routerLink= "/home-page" style="text-decoration: none;">Home</a>
         <a>Featured</a>
         <a>Arrivals</a>
         <a>About Us</a>
@@ -39,3 +40,4 @@
         <a>Blog</a> 
 </nav>
 </div>
+<router-outlet></router-outlet>
